@@ -1,0 +1,161 @@
+claim,paper,reproduced,match
+SR0 claude python (%),86,86,yes
+Final SR claude python (%),100,100,yes
+Repaired share of failed first attempts claude python (%),100,100,yes
+SR0 claude java (%),18,18,yes
+Final SR claude java (%),100,100,yes
+Repaired share of failed first attempts claude java (%),100,100,yes
+SR0 claude javascript (%),96,96,yes
+Final SR claude javascript (%),100,100,yes
+Repaired share of failed first attempts claude javascript (%),100,100,yes
+SR0 claude cpp (%),36,36,yes
+Final SR claude cpp (%),100,100,yes
+Repaired share of failed first attempts claude cpp (%),100,100,yes
+SR0 codex python (%),88,88,yes
+Final SR codex python (%),100,100,yes
+Repaired share of failed first attempts codex python (%),100,100,yes
+SR0 codex java (%),68,68,yes
+Final SR codex java (%),100,100,yes
+Repaired share of failed first attempts codex java (%),100,100,yes
+SR0 codex javascript (%),88,88,yes
+Final SR codex javascript (%),100,100,yes
+Repaired share of failed first attempts codex javascript (%),100,100,yes
+SR0 codex cpp (%),44,44,yes
+Final SR codex cpp (%),94,94,yes
+Repaired share of failed first attempts codex cpp (%),89,89,yes
+SR0 gemini python (%),32,32,yes
+Final SR gemini python (%),100,100,yes
+Repaired share of failed first attempts gemini python (%),100,100,yes
+SR0 gemini java (%),50,50,yes
+Final SR gemini java (%),96,96,yes
+Repaired share of failed first attempts gemini java (%),92,92,yes
+SR0 gemini javascript (%),84,84,yes
+Final SR gemini javascript (%),100,100,yes
+Repaired share of failed first attempts gemini javascript (%),100,100,yes
+SR0 gemini cpp (%),80,80,yes
+Final SR gemini cpp (%),98,98,yes
+Repaired share of failed first attempts gemini cpp (%),90,90,yes
+Inflation rho mean python,2.06,2.06,yes
+Inflation rho median python,1.50,1.50,yes
+Inflation rho mean java,3.97,3.97,yes
+Inflation rho median java,1.70,1.67,yes
+Inflation rho mean javascript,11.40,11.40,yes
+Inflation rho median javascript,8.50,8.50,yes
+Inflation rho mean cpp,1.00,1.00,yes
+Inflation rho median cpp,1.00,1.00,yes
+Python phantom rate (text says 'about 5%'),0.05,0.05,yes
+Java phantom rate (text says 'about 5%'),0.05,0.05,yes
+JavaScript phantom rate (text says 'about'),0.49,0.49,yes
+JavaScript hidden rate (text says 'about'),0.62,0.62,yes
+JavaScript bloat rate (text says 'about'),0.22,0.22,yes
+Table 4 P claude python,0.990,0.990,yes
+Table 4 R claude python,0.642,0.642,yes
+Table 4 F1 claude python,0.733,0.733,yes
+Table 4 P claude java,0.935,0.935,yes
+Table 4 R claude java,0.739,0.739,yes
+Table 4 F1 claude java,0.758,0.758,yes
+Table 4 P claude javascript,0.929,0.929,yes
+Table 4 R claude javascript,0.406,0.406,yes
+Table 4 F1 claude javascript,0.493,0.493,yes
+Table 4 P claude cpp,0.037,0.037,yes
+Table 4 R claude cpp,0.781,0.781,yes
+Table 4 F1 claude cpp,0.031,0.031,yes
+Table 4 P codex python,0.938,0.938,yes
+Table 4 R codex python,0.827,0.827,yes
+Table 4 F1 codex python,0.837,0.837,yes
+Table 4 P codex java,0.939,0.939,yes
+Table 4 R codex java,0.684,0.684,yes
+Table 4 F1 codex java,0.735,0.735,yes
+Table 4 P codex javascript,0.214,0.214,yes
+Table 4 R codex javascript,0.143,0.143,yes
+Table 4 F1 codex javascript,0.143,0.143,yes
+Table 4 P codex cpp,0.062,0.062,yes
+Table 4 R codex cpp,0.658,0.658,yes
+Table 4 F1 codex cpp,0.004,0.004,yes
+Table 4 P gemini python,0.899,0.899,yes
+Table 4 R gemini python,0.721,0.721,yes
+Table 4 F1 gemini python,0.756,0.756,yes
+Table 4 P gemini java,0.947,0.947,yes
+Table 4 R gemini java,0.523,0.523,yes
+Table 4 F1 gemini java,0.624,0.624,yes
+Table 4 P gemini javascript,0.040,0.040,yes
+Table 4 R gemini javascript,0.182,0.182,yes
+Table 4 F1 gemini javascript,0.005,0.005,yes
+Table 4 P gemini cpp,0.059,0.059,yes
+Table 4 R gemini cpp,0.708,0.708,yes
+Table 4 F1 gemini cpp,0.004,0.004,yes
+Table 4 P all python,0.944,0.944,yes
+Table 4 R all python,0.713,0.713,yes
+Table 4 F1 all python,0.765,0.765,yes
+Table 4 P all java,0.940,0.940,yes
+Table 4 R all java,0.653,0.653,yes
+Table 4 F1 all java,0.708,0.708,yes
+Table 4 P all javascript,0.413,0.413,yes
+Table 4 R all javascript,0.258,0.258,yes
+Table 4 F1 all javascript,0.219,0.219,yes
+Table 4 P all cpp,0.049,0.049,yes
+Table 4 R all cpp,0.729,0.729,yes
+Table 4 F1 all cpp,0.018,0.018,yes
+Complete disjointness rate python (%),36.0,36.0,yes
+Complete disjointness rate java (%),56.2,56.2,yes
+Cross-agent Jaccard Codex-Gemini JavaScript,0.073,0.073,yes
+Complete disjointness rate javascript (%),63.3,63.3,yes
+Complete disjointness rate cpp (%),57.7,57.7,yes
+"Complete disjointness rate, macro average (%)",53.3,53.3,yes
+Table 5 mean intra-agent J python,0.113,0.113,yes
+Table 5 median J python,0.083,0.083,yes
+Table 5 tasks with 3 successful trials python,50,50,yes
+Table 5 unanimous (UCR count) python,0,0,yes
+Table 5 mean vocabulary union python,5.5,5.5,yes
+Table 5 mean unanimous core python,0.2,0.2,yes
+Table 5 mean intra-agent J java,0.138,0.138,yes
+Table 5 median J java,0.111,0.111,yes
+Table 5 tasks with 3 successful trials java,48,48,yes
+Table 5 unanimous (UCR count) java,0,0,yes
+Table 5 mean vocabulary union java,5.6,5.6,yes
+Table 5 mean unanimous core java,0.1,0.1,yes
+Table 5 mean intra-agent J javascript,0.068,0.068,yes
+Table 5 median J javascript,0.000,0.000,yes
+Table 5 tasks with 3 successful trials javascript,50,50,yes
+Table 5 unanimous (UCR count) javascript,0,0,yes
+Table 5 mean vocabulary union javascript,5.9,5.9,yes
+Table 5 mean unanimous core javascript,0.0,0.0,yes
+Table 5 mean intra-agent J cpp,0.093,0.093,yes
+Table 5 median J cpp,0.067,0.067,yes
+Table 5 tasks with 3 successful trials cpp,35,35,yes
+Table 5 unanimous (UCR count) cpp,0,0,yes
+Table 5 mean vocabulary union cpp,5.3,5.3,yes
+Table 5 mean unanimous core cpp,0.1,0.1,yes
+Table 6 C++ first-attempt failures claude,32,32,yes
+Table 6 SysLib failures claude,28,28,yes
+Table 6 SLAR claude (%),87.5,87.5,yes
+Table 6 recovered claude,28,28,yes
+Table 6 EGAR claude (%),100.0,100.0,yes
+Table 6 C++ first-attempt failures codex,28,28,yes
+Table 6 SysLib failures codex,5,5,yes
+Table 6 SLAR codex (%),17.9,17.9,yes
+Table 6 recovered codex,5,5,yes
+Table 6 EGAR codex (%),100.0,100.0,yes
+Table 6 C++ first-attempt failures gemini,10,10,yes
+Table 6 SysLib failures gemini,0,0,yes
+Table 6 SLAR gemini (%),0.0,0.0,yes
+Table 6 recovered gemini,0,0,yes
+Table 6 EGAR gemini (%),-,-,yes
+Weakest first-attempt domain claude: System/Generation (%),40,40,yes
+Weakest first-attempt domain codex: Image Processing (%),50,50,yes
+Weakest first-attempt domain gemini: Data Processing (%),48,48,yes
+"Domain SR0 range, low (%)",40,40,yes
+"Domain SR0 range, high (%)",88,88,yes
+"Lowest final SR over agent-domain pairs, at least (%)",95,95,yes
+"Unnecessary dependency rate, Claude macro average (%)",91.8,91.8,yes
+C++ successful manifests declaring nlohmann_json,65,65,yes
+Total evaluation runs,1000,1000,yes
+Primary runs,600,600,yes
+Table 1 tasks in domain Data Processing,10,10,yes
+Table 1 tasks in domain Cryptography,7,7,yes
+Table 1 tasks in domain Image Processing,6,6,yes
+Table 1 tasks in domain Networking,6,6,yes
+Table 1 tasks in domain Text Processing,6,6,yes
+Table 1 tasks in domain Compression,5,5,yes
+Table 1 tasks in domain Math/Scientific,5,5,yes
+Table 1 tasks in domain System/Generation,5,5,yes

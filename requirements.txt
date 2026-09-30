@@ -1,0 +1,2 @@
+# reproduce.py uses only the standard library; matplotlib is needed only for the figures.
+matplotlib>=3.7,<4

@@ -1,0 +1,16 @@
+agent,language,n_tasks,with_external_dep,udr_pct
+claude,python,24,23,95.8
+claude,java,25,21,84.0
+claude,javascript,24,21,87.5
+claude,cpp,38,38,100.0
+claude,macro,,,91.8
+codex,python,24,1,4.2
+codex,java,25,8,32.0
+codex,javascript,24,0,0.0
+codex,cpp,36,20,55.6
+codex,macro,,,22.9
+gemini,python,24,20,83.3
+gemini,java,24,14,58.3
+gemini,javascript,24,24,100.0
+gemini,cpp,37,5,13.5
+gemini,macro,,,63.8

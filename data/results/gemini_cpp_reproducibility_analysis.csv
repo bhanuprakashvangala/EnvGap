@@ -1,0 +1,51 @@
+prompt_id,llm_name,language,docker_image,project_path,script_file,manifest_file,claimed_deps,claimed_count,transitive_deps,transitive_count,initial_execution,initial_error_type,initial_error_message,fix_applied,fix_description,final_execution,final_error_type,final_error_message,dep_gap,notes,sciunit_size,sciunit_repeat,runtime_deps
+p_01,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_01/cpp,main.cpp,CMakeLists.txt,nlohmann_json,1,,1,False,CodeBug,missing terminating quote character - broken string literal with literal newline,CodeBug,Fixed 2 broken string literals with literal newlines,True,None,,0,Gemini broken string bug,N/A,N/A,N/A
+p_02,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_02/cpp,main.cpp,CMakeLists.txt,"nlohmann_json,valijson",2,,2,True,None,,None,,True,None,,0,,14,True,none
+p_03,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_03/cpp,main.cpp,CMakeLists.txt,"nlohmann_json,pugixml",2,,2,False,CodeBug,missing terminating quote character - broken string literal with literal newline,CodeBug,Fixed 2 broken string literals with literal newlines,True,None,,0,Gemini broken string bug,N/A,N/A,N/A
+p_04,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_04/cpp,main.cpp,CMakeLists.txt,yaml-cpp,1,,1,False,CodeBug,broken string literal + nested shell quotes in C++ string,MultipleFixes,Fixed 2 broken strings + removed shell interpolation from C++ string,True,None,,0,Gemini broken string bug + shell syntax in C++,N/A,N/A,N/A
+p_05,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_05/cpp,main.cpp,CMakeLists.txt,nlohmann_json,1,,1,True,None,,None,,True,None,,0,,14,True,none
+p_06,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_06/cpp,main.cpp,CMakeLists.txt,sqlite3,1,,1,False,CodeBug,missing terminating quote - literal tab and newline in strings,CodeBug,Fixed literal tab and newline in string literals,True,None,,0,Gemini broken string bug,N/A,N/A,N/A
+p_07,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_07/cpp,main.cpp,CMakeLists.txt,nlohmann_json,1,,1,False,CodeBug,missing terminating quote - broken string literal,CodeBug,Fixed 2 broken string literals,True,None,,0,Gemini broken string bug,N/A,N/A,N/A
+p_08,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_08/cpp,main.cpp,CMakeLists.txt,"nlohmann_json,yaml-cpp,pugixml",3,,3,True,None,,None,,True,None,,0,,14,True,none
+p_09,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_09/cpp,main.cpp,CMakeLists.txt,nlohmann_json,1,,1,False,CodeBug,missing terminating quote - broken string literal,CodeBug,Fixed 2 broken string literals,True,None,,0,Gemini broken string bug,N/A,N/A,N/A
+p_10,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_10/cpp,main.cpp,CMakeLists.txt,nlohmann_json,1,,1,False,CodeBug,missing terminating quote - broken string literal,CodeBug,Fixed 4 broken string literals,True,None,,0,Gemini broken string bug,N/A,N/A,N/A
+p_11,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_11/cpp,main.cpp,CMakeLists.txt,OpenSSL,1,,1,True,None,,None,,True,None,,0,System dep - requires libssl-dev,22,True,libcrypto
+p_12,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_12/cpp,main.cpp,CMakeLists.txt,OpenSSL,1,,1,True,None,,None,,True,None,,0,System dep - deprecated RSA API warnings but builds fine,22,True,libcrypto
+p_13,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_13/cpp,main.cpp,CMakeLists.txt,"OpenSSL,nlohmann_json",2,,2,True,None,,None,,True,None,,0,,23,True,libcrypto
+p_14,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_14/cpp,main.cpp,CMakeLists.txt,OpenSSL,1,,1,False,CodeBug,missing terminating quote - broken string literal,CodeBug,Fixed 1 broken string literal,True,None,,0,Gemini broken string bug,N/A,N/A,N/A
+p_15,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_15/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_16,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_16/cpp,main.cpp,CMakeLists.txt,OpenSSL,1,,1,True,None,,None,,True,None,,0,CLI needs cert file but loads fine,22,True,libcrypto
+p_17,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_17/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_18,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_18/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - PPM format,13,True,none
+p_19,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_19/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_20,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_20/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_21,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_21/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_22,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_22/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_23,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_23/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_24,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_24/cpp,main.cpp,CMakeLists.txt,CURL,1,,1,True,None,,None,,True,None,,0,System dep - requires libcurl4-openssl-dev,44,True,"libbrotlicommon,libbrotlidec,libcom_err,libcrypto,libcurl,libffi,libgmp,libgnutls,libgssapi_krb5,libhogweed,libidn2,libk5crypto,libkeyutils,libkrb5,libkrb5support,liblber-2.5,libldap-2.5,libnettle,libnghttp2,libp11-kit,libpsl,libresolv,librtmp,libsasl2,libssh,libssl,libtasn1,libunistring,libz,libzstd"
+p_25,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_25/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_26,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_26/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_27,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_27/cpp,main.cpp,CMakeLists.txt,CURL,1,,1,False,CodeBug,broken string literal,CodeBug,Fixed 1 broken string literal,True,None,,0,Gemini broken string bug,N/A,N/A,N/A
+p_28,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_28/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_29,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_29/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,N/A,N/A,N/A
+p_30,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_30/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_31,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_31/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_32,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_32/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_33,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_33/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only,13,True,none
+p_34,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_34/cpp,main.cpp,CMakeLists.txt,gumbo-parser,1,,1,False,BuildError,FetchContent build step for gumbo_cmake failed - incompatible CMake build,None,,False,BuildError,gumbo-parser fork lacks CMake support,0,Unfixable - wrong repo fork used,N/A,N/A,N/A
+p_35,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_35/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_36,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_36/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_37,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_37/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_38,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_38/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_39,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_39/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_40,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_40/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_41,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_41/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_42,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_42/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_43,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_43/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_44,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_44/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_45,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_45/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_46,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_46/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_47,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_47/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_48,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_48/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_49,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_49/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none
+p_50,gemini,cpp,tmlr-cpp-eval,gemini_generated/p_50/cpp,main.cpp,CMakeLists.txt,,0,,0,True,None,,None,,True,None,,0,Standard library only - stub implementation,13,True,none

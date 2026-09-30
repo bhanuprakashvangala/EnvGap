@@ -1,0 +1,25 @@
+agent,domain,n,sr0_pct,final_sr_pct
+claude,Compression,20,60.0,100.0
+claude,Cryptography,28,60.7,100.0
+claude,Data Processing,40,82.5,100.0
+claude,Image Processing,24,50.0,100.0
+claude,Math/Scientific,20,60.0,100.0
+claude,Networking,24,50.0,100.0
+claude,System/Generation,20,40.0,100.0
+claude,Text Processing,24,50.0,100.0
+codex,Compression,20,85.0,100.0
+codex,Cryptography,28,75.0,96.4
+codex,Data Processing,40,87.5,100.0
+codex,Image Processing,24,50.0,100.0
+codex,Math/Scientific,20,60.0,100.0
+codex,Networking,24,70.8,100.0
+codex,System/Generation,20,50.0,95.0
+codex,Text Processing,24,83.3,95.8
+gemini,Compression,20,60.0,100.0
+gemini,Cryptography,28,78.6,100.0
+gemini,Data Processing,40,47.5,100.0
+gemini,Image Processing,24,75.0,100.0
+gemini,Math/Scientific,20,50.0,95.0
+gemini,Networking,24,58.3,95.8
+gemini,System/Generation,20,70.0,100.0
+gemini,Text Processing,24,58.3,95.8

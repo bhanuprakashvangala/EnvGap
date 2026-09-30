@@ -1,0 +1,4 @@
+agent,first_attempt_failures,syslib,slar_pct,recovered,egar_pct
+claude,32,28,87.5,28,100.0
+codex,28,5,17.9,5,100.0
+gemini,10,0,0.0,0,

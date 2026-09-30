@@ -1,0 +1,17 @@
+language,pair,n_tasks,mean_jaccard,cdr_pct
+python,claude-codex,50,0.348,48.0
+python,claude-gemini,50,0.493,16.0
+python,codex-gemini,50,0.362,44.0
+python,all pairs,150,0.401,36.0
+java,claude-codex,50,0.274,56.0
+java,claude-gemini,48,0.25,45.8
+java,codex-gemini,48,0.238,66.7
+java,all pairs,146,0.254,56.2
+javascript,claude-codex,50,0.269,64.0
+javascript,claude-gemini,50,0.223,44.0
+javascript,codex-gemini,50,0.073,82.0
+javascript,all pairs,150,0.188,63.3
+cpp,claude-codex,47,0.341,42.6
+cpp,claude-gemini,49,0.19,67.3
+cpp,codex-gemini,46,0.333,63.0
+cpp,all pairs,142,0.287,57.7

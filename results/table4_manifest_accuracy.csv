@@ -1,0 +1,17 @@
+agent,language,n,precision,recall,f1
+claude,python,49,0.99,0.642,0.733
+claude,java,46,0.935,0.739,0.758
+claude,javascript,47,0.929,0.406,0.493
+claude,cpp,50,0.037,0.781,0.031
+codex,python,27,0.938,0.827,0.837
+codex,java,33,0.939,0.684,0.735
+codex,javascript,28,0.214,0.143,0.143
+codex,cpp,32,0.062,0.658,0.004
+gemini,python,46,0.899,0.721,0.756
+gemini,java,38,0.947,0.523,0.624
+gemini,javascript,50,0.04,0.182,0.005
+gemini,cpp,17,0.059,0.708,0.004
+all,python,122,0.944,0.713,0.765
+all,java,117,0.94,0.653,0.708
+all,javascript,125,0.413,0.258,0.219
+all,cpp,99,0.049,0.729,0.018
