@@ -89,6 +89,7 @@ Notes and differences from the paper:
   extended version at ACM REP 2026, [doi:10.1145/3820002.3828581](https://doi.org/10.1145/3820002.3828581).
 - [EnvGap on Hugging Face](https://huggingface.co/datasets/bhanuprakashvangala/EnvGap), a follow-up benchmark in which
   agents repair the environment of real GitHub issues. It does not contain the data in this repository.
+  The lite version in the benchmarks is the dataset that we have used here for the study of above.
 
 ## Citation
 
