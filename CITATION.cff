@@ -24,6 +24,7 @@ preferred-citation:
       given-names: Bhanu Prakash
     - family-names: Malik
       given-names: Tanu
-  journal: AI Magazine
+  journal: "arXiv preprint arXiv:2610.00425"
   year: 2026
-  notes: Under review
+  doi: "10.48550/arXiv.2610.00425"
+  url: "https://arxiv.org/abs/2610.00425"

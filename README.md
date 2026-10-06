@@ -2,7 +2,7 @@
 
 Data and analysis code for **Code That Works, Environments That Don't: Measuring Environment Reproducibility in AI-Generated Software**
 Bhanu Prakash Vangala, Tanu Malik. University of Missouri.
-AI Magazine (under review). A preprint link will be added here.
+AI Magazine (under review). Preprint: [arXiv:2610.00425](https://arxiv.org/abs/2610.00425).
 
 Coding agents are usually scored on whether their code works, not on whether they declare the environment that code
 needs. We ran Claude Code, Codex and Gemini Code Assist on 50 tasks in Python, Java, JavaScript and C++ (600 primary
@@ -115,12 +115,14 @@ Every file is a CSV, which opens in Excel or any spreadsheet program.
 ## Citation
 
 ```bibtex
-@article{vangala2026codethatworks,
-  title   = {Code That Works, Environments That Don't: Measuring Environment Reproducibility in AI-Generated Software},
-  author  = {Vangala, Bhanu Prakash and Malik, Tanu},
-  journal = {AI Magazine},
-  year    = {2026},
-  note    = {Under review}
+@misc{vangala2026codeworksenvironmentsdont,
+      title={Code That Works, Environments That Don't: Measuring Environment Reproducibility in AI-Generated Software},
+      author={Bhanu Prakash Vangala and Tanu Malik},
+      year={2026},
+      eprint={2610.00425},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2610.00425},
 }
 ```
 
