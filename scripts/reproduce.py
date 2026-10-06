@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Recompute the paper's tables and figure values from data/results/*.csv.
+"""Recompute the paper's tables and figure values from results/raw/*.csv.
 
     python scripts/reproduce.py
 
@@ -16,7 +16,7 @@ import sys
 from collections import defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESULTS_IN = os.path.join(ROOT, "data", "results")
+RESULTS_IN = os.path.join(ROOT, "results", "raw")
 PROMPTS = os.path.join(ROOT, "data", "prompts", "prompt_overview.csv")
 OUT = os.path.join(ROOT, "results")
 
@@ -404,7 +404,7 @@ def misc(rows, primary):
     check("C++ successful manifests declaring nlohmann_json", PAPER["nlohmann_json"], n, 0, "{:.0f}")
     check("Total evaluation runs", 1000, len(rows), 0, "{:.0f}")
     check("Primary runs", 600, len(primary), 0, "{:.0f}")
-    with open(os.path.join(ROOT, "data", "run_matrix.csv"), encoding="utf-8", newline="") as fh:
+    with open(os.path.join(RESULTS_IN, "run_matrix.csv"), encoding="utf-8", newline="") as fh:
         traced = sum(truthy(r["has_provenance_log"]) for r in csv.DictReader(fh))
     print(f"runs with a runtime provenance log (run_matrix.csv): {traced}")
     with open(PROMPTS, encoding="utf-8", newline="") as fh:

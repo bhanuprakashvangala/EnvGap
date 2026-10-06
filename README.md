@@ -13,12 +13,11 @@ runtime. This repository has the per-run results and the script that recomputes 
 ## Layout
 
 ```
-data/results/        20 CSVs, one per agent x language (x trial), 50 rows each
-data/run_matrix.csv  all 1,000 runs in one table
 data/prompts/        the 50 task prompts for each language and the prompt template
 environment/         Dockerfiles and the Sciunit tracing / dependency extraction scripts
 scripts/             reproduce.py, which recomputes the paper's numbers
-results/             tables and figures written by reproduce.py, plus verification.csv
+results/raw/         the recorded runs: 20 CSVs, one per agent x language (x trial), 50 rows each, and run_matrix.csv
+results/             tables and figures written by reproduce.py, plus verification.csv (see Results files below)
 ```
 
 ## Setup
@@ -81,6 +80,28 @@ Notes and differences from the paper:
   `zlib1g-dev`, which the paper lists for its C++ image.
 - Not included: the generated projects and the 927 Sciunit provenance logs (about 400 MB compressed). No number
   computed here needs them. They are available from the authors on request.
+
+## Results files
+
+Every file is a CSV, which opens in Excel or any spreadsheet program.
+
+| File | Contents |
+|---|---|
+| `results/raw/{agent}[_trial_N]_{language}_reproducibility_analysis.csv` | 20 files, 50 rows each, one per task: the project and its manifest, the declared (`claimed_deps`), installed (`transitive_deps`) and traced (`runtime_deps`) dependencies with their counts, the first attempt (`initial_execution`) and its error, the agent's fix, the final outcome and its error, the dependency gap, and the Sciunit package size and repeat result. Claude Code has three trials; Codex and Gemini have one |
+| `results/raw/run_matrix.csv` | all 1,000 runs in one table, one row per run: agent, trial, task, language, first-attempt and final success, error type, whether a fix was applied, declared and installed dependency counts, the gap, and whether a Sciunit package and a provenance log exist |
+| `results/convergence.csv` | Figs. 4-6: first-attempt and final success per agent and language, and the share of first-attempt failures repaired |
+| `results/inflation.csv` | Fig. 8: the ratio of installed to declared dependencies, mean and median per language |
+| `results/mismatch_rates.csv` | Fig. 7: phantom, hidden and bloat rates per language |
+| `results/table4_manifest_accuracy.csv` | Table 4: precision, recall and F1 of the declared manifest against the runtime trace, per agent and language |
+| `results/cross_agent_agreement.csv` | Fig. 9: mean Jaccard similarity of the agents' dependency sets, and the share of tasks where they share nothing, per language and agent pair |
+| `results/table5_stochastic.csv` | Table 5: agreement across Claude Code's three trials: mean and median Jaccard, unanimous tasks, union and core sizes |
+| `results/table6_cpp_syslib.csv` | Table 6: C++ first-attempt failures, the share labelled as system-library problems (`slar_pct`), and the share of those later recovered (`egar_pct`) |
+| `results/domains.csv` | Fig. 10: first-attempt and final success per agent and task domain |
+| `results/unnecessary_dependency_rate.csv` | Fig. 11: on tasks that a run solved with no declared dependencies, the share of each agent's successful runs that declared one anyway |
+| `results/figures/` | the success and mismatch figures as PNG |
+| `results/verification.csv` | each of the 160 recomputed values next to the paper's, and whether they match |
+
+`scripts/reproduce.py` writes everything except `results/raw/`.
 
 ## Related
 
